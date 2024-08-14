@@ -36,18 +36,18 @@ Colors:
 - Body text - light gray #7b7a86
 ******************************************/
 
-
 /**************************/
 /*     General Styles     */
 /**************************/
 body,
 html {
-    width: 100%;
+	width: 100%;
 	height: 100%;
 }
 
-body, p {
-	color: #7b7a86; 
+body,
+p {
+	color: #7b7a86;
 	font: 400 1rem/1.625rem "Open Sans", sans-serif;
 }
 
@@ -281,7 +281,6 @@ a:hover {
 	color: #7b7a86;
 	font: 400 0.875rem/1.875rem "Open Sans", sans-serif;
 	transition: all 0.2s;
-	-webkit-appearance: none; /* removes inner shadow on form inputs on ios safari */
 }
 
 .form-control-select {
@@ -291,16 +290,16 @@ a:hover {
 }
 
 select {
-    /* you should keep these first rules in place to maintain cross-browser behavior */
-    -webkit-appearance: none;
+	/* you should keep these first rules in place to maintain cross-browser behavior */
+	-webkit-appearance: none;
 	-moz-appearance: none;
 	-ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    background-image: url('../images/down-arrow.png');
-    background-position: 96% 50%;
-    background-repeat: no-repeat;
-    outline: none;
+	-o-appearance: none;
+	appearance: none;
+	background-image: url("../images/down-arrow.png");
+	background-position: 96% 50%;
+	background-repeat: no-repeat;
+	outline: none;
 }
 
 .form-control-textarea {
@@ -330,7 +329,7 @@ select {
 	border: 1px solid #a1a1a1;
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
 	vertical-align: -10%;
 	margin-right: 0.5rem;
 }
@@ -367,17 +366,17 @@ input[type='checkbox'] {
 /* animate in */
 .my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
 	opacity: 1;
-	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0); 
-	transform: translateY(0) perspective(37.5rem) rotateX(0); 
+	-webkit-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	-ms-transform: translateY(0) perspective(37.5rem) rotateX(0);
+	transform: translateY(0) perspective(37.5rem) rotateX(0);
 }
 
 /* animate out */
 .my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
 	opacity: 0;
-	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
-	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg); 
+	-webkit-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	-ms-transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
+	transform: translateY(-0.625rem) perspective(37.5rem) rotateX(10deg);
 }
 
 /* dark overlay, start state */
@@ -444,7 +443,6 @@ input[type='checkbox'] {
 }
 /* end of fade animation for image lightbox - magnific popup */
 
-
 /**********************/
 /*     Navigation     */
 /**********************/
@@ -460,8 +458,8 @@ input[type='checkbox'] {
 }
 
 .navbar .logo-image img {
-    width: 160px;
-	height: 80px;
+	width: 90px;
+	height: 90px;
 }
 
 .navbar .logo-text {
@@ -481,9 +479,10 @@ input[type='checkbox'] {
 	overflow-y: auto;
 	visibility: hidden;
 	background-color: #ffffff;
-	transition: visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
-	transition: transform .3s ease-in-out, visibility .3s ease-in-out;
-	transition: transform .3s ease-in-out, visibility .3s ease-in-out, -webkit-transform .3s ease-in-out;
+	transition: visibility 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+	transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
+		-webkit-transform 0.3s ease-in-out;
 }
 
 .offcanvas-collapse.open {
@@ -516,12 +515,12 @@ input[type='checkbox'] {
 }
 
 @keyframes fadeDropdown {
-    0% {
-        opacity: 0;
-    }
+	0% {
+		opacity: 0;
+	}
 
-    100% {
-        opacity: 1;
+	100% {
+		opacity: 1;
 	}
 }
 
@@ -582,14 +581,14 @@ input[type='checkbox'] {
 	font-size: 1.25rem;
 }
 
-
 /*****************/
 /*    Header     */
 /*****************/
 .header {
 	padding-top: 7rem;
 	padding-bottom: 4.5rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0)), url('../images/background-site-pc.png') center center no-repeat;
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+		url("../images/background-site-pc.png") center center no-repeat;
 	background-size: cover;
 }
 
@@ -620,7 +619,6 @@ input[type='checkbox'] {
 .header .image-container {
 	text-align: center;
 }
-
 
 /********************/
 /*     Features     */
@@ -732,7 +730,6 @@ input[type='checkbox'] {
 	margin: 1rem auto 2rem auto;
 }
 
-
 /*********************/
 /*     Details 1     */
 /*********************/
@@ -752,7 +749,6 @@ input[type='checkbox'] {
 .basic-1 p {
 	margin-bottom: 1.75rem;
 }
-
 
 /******************************/
 /*     Details 1 Lightbox     */
@@ -855,7 +851,6 @@ input[type='checkbox'] {
 }
 /* end of close x button */
 
-
 /*********************/
 /*     Details 2     */
 /*********************/
@@ -890,14 +885,17 @@ input[type='checkbox'] {
 	margin-left: 0.5rem;
 }
 
-
 /***********************/
 /*     Screenshots     */
 /***********************/
 .slider-1 {
 	padding-top: 7.5rem;
 	padding-bottom: 8.125rem;
-	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 252, 225, 0.9)), url('../images/fundodosprints.jpeg') center center no-repeat;
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.9),
+			rgba(255, 252, 225, 0.9)
+		),
+		url("../images/fundodosprints.jpeg") center center no-repeat;
 	background-size: cover;
 }
 
@@ -948,7 +946,6 @@ input[type='checkbox'] {
 	background-size: 1.125rem 1.75rem;
 }
 
-
 /**************************/
 /*     Small Features     */
 /**************************/
@@ -992,15 +989,19 @@ input[type='checkbox'] {
 	margin-bottom: 0.5rem;
 }
 
-
 /*****************/
 /*     About     */
 /*****************/
 .slider-2 {
 	padding-top: 8rem;
 	padding-bottom: 7rem;
-	background: linear-gradient(to bottom right, rgba(42, 50, 59, 0.95), rgba(42, 50, 59, 0.95)), url('../images/about-background.jpg') center center no-repeat;
-	background-size: cover; 
+	background: linear-gradient(
+			to bottom right,
+			rgba(42, 50, 59, 0.95),
+			rgba(42, 50, 59, 0.95)
+		),
+		url("../images/about-background.jpg") center center no-repeat;
+	background-size: cover;
 }
 
 .slider-2 .image-container {
@@ -1034,7 +1035,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .slider-2 .video-play-button:before {
 	content: "";
 	position: absolute;
@@ -1051,7 +1052,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .slider-2 .video-play-button:after {
 	content: "";
 	position: absolute;
@@ -1068,7 +1069,7 @@ input[type='checkbox'] {
 	-ms-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
 }
-  
+
 .slider-2 .video-play-button span {
 	position: relative;
 	display: block;
@@ -1081,7 +1082,7 @@ input[type='checkbox'] {
 	border-top: 1rem solid transparent;
 	border-bottom: 1rem solid transparent;
 }
-  
+
 @keyframes pulse-border {
 	0% {
 		transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -1092,7 +1093,7 @@ input[type='checkbox'] {
 		opacity: 0;
 	}
 }
-/* end of video play button */  
+/* end of video play button */
 
 .slider-2 .slider-container {
 	max-width: 24.25rem;
@@ -1132,7 +1133,6 @@ input[type='checkbox'] {
 	background-color: #efefef;
 }
 
-
 /********************/
 /*     Download     */
 /********************/
@@ -1156,7 +1156,7 @@ input[type='checkbox'] {
 	font-weight: 700;
 	font-family: Poppins;
 	font-size: 3rem;
-	line-height: 3.5rem;	
+	line-height: 3.5rem;
 	vertical-align: middle;
 }
 
@@ -1177,7 +1177,6 @@ input[type='checkbox'] {
 	margin-bottom: 1.125rem;
 	margin-left: 0.375rem;
 }
-
 
 /*********************/
 /*     More Apps     */
@@ -1221,7 +1220,7 @@ input[type='checkbox'] {
 	-moz-transform: scale(1.15);
 	-webkit-transform: scale(1.15);
 	transform: scale(1.15);
-} 
+}
 /* end of hover animation */
 
 .cards-2 .card-body {
@@ -1250,7 +1249,6 @@ input[type='checkbox'] {
 .cards-2 .fab {
 	color: #ffffff;
 }
-
 
 /**********************/
 /*     Newsletter     */
@@ -1298,7 +1296,6 @@ input[type='checkbox'] {
 	right: -5rem;
 }
 
-
 /******************/
 /*     Footer     */
 /******************/
@@ -1325,7 +1322,7 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack .fa-stack-1x {
-    color: #323c46;
+	color: #323c46;
 	transition: all 0.2s ease;
 }
 
@@ -1339,9 +1336,8 @@ input[type='checkbox'] {
 }
 
 .footer .fa-stack:hover .fa-stack-2x {
-    color: #991b32;
+	color: #991b32;
 }
-
 
 /*********************/
 /*     Copyright     */
@@ -1361,7 +1357,6 @@ input[type='checkbox'] {
 .copyright a {
 	color: #92989c;
 }
-
 
 /******************************/
 /*     Back To Top Button     */
@@ -1383,7 +1378,6 @@ a.back-to-top {
 a:hover.back-to-top {
 	background-color: #991b32;
 }
-
 
 /***********************/
 /*     Extra Pages     */
@@ -1423,7 +1417,7 @@ a:hover.back-to-top {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	border: none; 
+	border: none;
 }
 
 .ex-cards-1 .card {
@@ -1486,19 +1480,16 @@ a:hover.back-to-top {
 	border-radius: 2.5rem;
 }
 
-
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
 /* Min-width 768px */
 @media (min-width: 768px) {
-
 	/* Header */
 	.header {
 		padding-top: 8.5rem;
 	}
 	/* end of header */
-
 
 	/* Features */
 	.tabs .fa-stack {
@@ -1511,19 +1502,17 @@ a:hover.back-to-top {
 	}
 	/* end of features */
 
-
 	/* Screenshots */
 	.slider-1 .swiper-button-prev {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		width: 1.375rem;
 		background-size: 1.375rem 2.125rem;
 	}
 	/* end of screenshots */
-
 
 	/* Newsletter */
 	.form .form-group {
@@ -1531,7 +1520,7 @@ a:hover.back-to-top {
 		display: inline-block;
 		vertical-align: top;
 	}
-	
+
 	.form .form-control-input {
 		width: 20rem;
 		border-top-right-radius: 0;
@@ -1546,7 +1535,6 @@ a:hover.back-to-top {
 	}
 	/* end of newsletter */
 
-
 	/* Extra Pages */
 	.ex-basic-1 .text-box {
 		padding: 1.75rem 2rem 0.875rem 2rem;
@@ -1555,10 +1543,8 @@ a:hover.back-to-top {
 }
 /* end of min-width 768px */
 
-
 /* Min-width 992px */
 @media (min-width: 992px) {
-	
 	/* General Styles */
 	.h1-large {
 		font-size: 3.75rem;
@@ -1577,7 +1563,6 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 	/* end of general styles */
-
 
 	/* Navigation */
 	.navbar {
@@ -1615,12 +1600,12 @@ a:hover.back-to-top {
 		margin-top: 0;
 		margin-bottom: 0;
 	}
-	
+
 	.navbar .nav-item .nav-link {
 		padding-right: 0.75rem;
 		padding-left: 0.75rem;
 	}
-	
+
 	.navbar .dropdown-menu {
 		margin-top: 0.25rem;
 		background-color: #ffffff;
@@ -1635,8 +1620,7 @@ a:hover.back-to-top {
 		margin-left: 0.875rem;
 	}
 	/* end of navigation */
-	
-	
+
 	/* Header */
 	.header .text-container {
 		margin-top: 5.5rem;
@@ -1651,7 +1635,6 @@ a:hover.back-to-top {
 		margin-left: 0rem;
 	}
 	/* end of header */
-
 
 	/* Features */
 	.tabs #tab-1 .list-unstyled {
@@ -1671,7 +1654,7 @@ a:hover.back-to-top {
 		max-width: 12.625rem;
 		text-align: right;
 	}
-	
+
 	.tabs #tab-1 img {
 		margin-top: 0;
 		margin-bottom: 0;
@@ -1685,7 +1668,6 @@ a:hover.back-to-top {
 		margin-bottom: 0;
 	}
 	/* end of features */
-
 
 	/* Details 1 */
 	.basic-1 .image-container {
@@ -1701,7 +1683,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 1 */
 
-
 	/* Details 1 Lightbox */
 	.lightbox-basic {
 		padding: 3rem 3rem;
@@ -1713,13 +1694,11 @@ a:hover.back-to-top {
 	}
 	/* end of details 1 lightbox */
 
-
 	/* Details 2 */
 	.basic-2 .text-container {
 		margin-bottom: 0;
 	}
 	/* end of details 2 */
-
 
 	/* Screenshots */
 	.slider-1 .swiper-container {
@@ -1727,20 +1706,18 @@ a:hover.back-to-top {
 	}
 	/* end of screenshots */
 
-
 	/* Small Features */
 	.cards-1 .card {
 		display: inline-block;
 		width: 18rem;
 		vertical-align: top;
 	}
-	
-	.cards-1 .card:nth-of-type(3n+2) {
+
+	.cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 1.75rem;
 		margin-left: 1.75rem;
 	}
 	/* end of small features */
-
 
 	/* Download */
 	.counter #counter {
@@ -1760,20 +1737,18 @@ a:hover.back-to-top {
 	}
 	/* end of download */
 
-
 	/* More Apps */
 	.cards-2 .card {
 		display: inline-block;
 		width: 18rem;
 		vertical-align: top;
 	}
-	
-	.cards-2 .card:nth-of-type(3n+2) {
+
+	.cards-2 .card:nth-of-type(3n + 2) {
 		margin-right: 1.75rem;
 		margin-left: 1.75rem;
 	}
 	/* end of more apps */
-
 
 	/* Extra Pages */
 	.ex-cards-1 .card {
@@ -1782,7 +1757,7 @@ a:hover.back-to-top {
 		vertical-align: top;
 	}
 
-	.ex-cards-1 .card:nth-of-type(3n+2) {
+	.ex-cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 1rem;
 		margin-left: 1rem;
 	}
@@ -1790,17 +1765,14 @@ a:hover.back-to-top {
 }
 /* end of min-width 992px */
 
-
 /* Min-width 1200px */
 @media (min-width: 1200px) {
-
 	/* Header */
 	.header .text-container {
 		margin-top: 7rem;
 		margin-left: 3.5rem;
 	}
 	/* end of header */
-
 
 	/* Features */
 	.tabs {
@@ -1825,7 +1797,7 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 
-	.tabs #tab-2 h3 { 
+	.tabs #tab-2 h3 {
 		margin-top: 1.5rem;
 	}
 
@@ -1863,7 +1835,6 @@ a:hover.back-to-top {
 	}
 	/* end of features */
 
-
 	/* Details 1 */
 	.basic-1 .text-container {
 		margin-top: 5.625rem;
@@ -1871,13 +1842,11 @@ a:hover.back-to-top {
 	}
 	/* end of details 1 */
 
-
 	/* Details 1 Lightbox */
 	.lightbox-basic .image-container {
 		margin-right: 1.5rem;
 	}
 	/* end of details 1 lightbox */
-
 
 	/* Details 2 */
 	.basic-2 .text-container {
@@ -1890,7 +1859,6 @@ a:hover.back-to-top {
 	}
 	/* end of details 2 */
 
-
 	/* Screenshots */
 	.slider-1 .swiper-container {
 		width: 100%;
@@ -1899,24 +1867,22 @@ a:hover.back-to-top {
 	.slider-1 .swiper-button-prev {
 		left: -2rem;
 	}
-	
+
 	.slider-1 .swiper-button-next {
 		right: -2rem;
 	}
 	/* end of screenshots */
 
-
 	/* Small Features */
 	.cards-1 .card {
 		width: 20rem;
 	}
-	
-	.cards-1 .card:nth-of-type(3n+2) {
+
+	.cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 4.375rem;
 		margin-left: 4.375rem;
 	}
 	/* end of small features */
-
 
 	/* About */
 	.slider-2 {
@@ -1955,13 +1921,12 @@ a:hover.back-to-top {
 	}
 	/* end of about */
 
-
 	/* Download */
 	.counter {
 		padding-top: 6.5rem;
 		padding-bottom: 6rem;
 		background: color(#991b32);
-		background-size:cover;
+		background-size: cover;
 		text-align: left;
 	}
 
@@ -1972,18 +1937,16 @@ a:hover.back-to-top {
 	}
 	/* end of download */
 
-
 	/* More Apps */
 	.cards-2 .card {
 		width: 20rem;
 	}
-	
-	.cards-2 .card:nth-of-type(3n+2) {
+
+	.cards-2 .card:nth-of-type(3n + 2) {
 		margin-right: 4.375rem;
 		margin-left: 4.375rem;
 	}
 	/* end of more apps */
-
 
 	/* Newsletter */
 	.form .circle-deco {
@@ -1992,13 +1955,12 @@ a:hover.back-to-top {
 	}
 	/* end of newsletter */
 
-
 	/* Extra Pages */
 	.ex-cards-1 .card {
 		width: 21rem;
 	}
 
-	.ex-cards-1 .card:nth-of-type(3n+2) {
+	.ex-cards-1 .card:nth-of-type(3n + 2) {
 		margin-right: 2.875rem;
 		margin-left: 2.875rem;
 	}
@@ -2020,4 +1982,4 @@ a:hover.back-to-top {
 	mask-repeat: no-repeat;
 	-webkit-mask-size: 100% 100%;
 	mask-size: 100% 100%;
-  }
+}
